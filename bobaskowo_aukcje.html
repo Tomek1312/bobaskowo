@@ -1,0 +1,421 @@
+﻿<html>
+<head>
+    <title>Wszystko dla mamy i bobasa</title>
+
+</head>
+</head>
+<body>
+
+<form style="position:relative;top:0;overflow:auto;margin:0;padding:0;">
+    <fieldset id="user_field" style="position:relative;top:0;border:none;margin:0;padding:0;text-align:left;">
+        <style><!--
+        #user_field html {
+        }
+
+        #user_field {
+            background-color: white;
+            font-family: 'Tahoma';
+            font-size: 11px;
+            color: rgba(82, 93, 86, 0.87);
+            list-style: none;
+            margin: 0;
+            padding: 0;
+
+        }
+
+        #user_field #bobaskowo_main {
+            width: 1140px;
+        }
+
+        #user_field #bobaskowo_top {
+            border: 2px solid;
+            border-radius: 10px;
+            width: 1100px;
+            height: 374px;
+            background: url('http://bobaskowoskl.nazwa.pl/bobaskowo_sklep/images/allegro/baner_top_1.jpg') no-repeat 0% 20%;
+            margin: 0;
+            padding: 0;
+            position: relative;
+        }
+
+        #user_field #bobaskowo_menu {
+            position: relative;
+            top: 320px;
+        }
+
+        #user_field #bobaskowo_menu ul {
+            position: relative;
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+        }
+
+        #user_field #bobaskowo_menu li {
+            float: left;
+            width: 25%;
+        }
+
+        #user_field #bobaskowo_menu li a {
+            display: block;
+            background-color: #6DE0FF;
+            text-decoration: none;
+            text-align: center;
+            font-family: CityBlueprint;
+            font-size: 16px;
+            font-style: oblique;
+            height: 40px;
+            margin-left: 2px;
+        }
+
+        #user_field #bobaskowo_menu li a:hover {
+            background-color: #61a8e5;
+            color: white;
+        }
+
+        #user_field #bobaskowo_left_menu {
+            width: 1100px;
+        }
+
+        /*                               Left item                  -*/
+
+        #user_field #bobaskowo_left {
+            margin: 20px 0px;
+            padding: 0;
+            display: block;
+            width: 244px;
+            float: left;
+            text-align: left;
+            border: 2px solid;
+            border-radius: 10px;
+        }
+
+        #user_field #bobaskowo_left .bobaskowo_left_item {
+            margin: 0;
+            padding: 25px 0 5px 0;
+            text-align: center
+
+        }
+
+        #user_field #bobaskowo_left ul.bobaskowo_left_item_list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #user_field #bobaskowo_left li.bobaskowo_left_item_list_top {
+            font-size: 16px;
+            font-weight: 700;
+            text-align: center;
+            background-color: #6DE0FF;
+            height: 30px;
+            padding-top: 10px;
+            color: white;
+            vertical-align: middle;
+        }
+
+        #user_field #bobaskowo_left .star{
+            color:yellow;
+        }
+
+        #user_field #bobaskowo_left li.bobaskowo_left_item_list_li {
+            background-color: #e5e7ed;
+            width: 244px;
+            height: 35px;
+            padding: 0;
+            margin: 1px 0 0 0;
+            position: relative;
+        }
+
+        #user_field #bobaskowo_left li.bobaskowo_left_item_list_li .nazwa {
+            font-weight: 700;
+        }
+
+        #user_field #bobaskowo_left li.bobaskowo_left_item_list_li .tekst a {
+            font-weight: 400;
+            text-decoration: none;
+        }
+
+        #user_field #bobaskowo_left li.bobaskowo_left_item_list_li .tekst,
+        #user_field #bobaskowo_left li.bobaskowo_left_item_list_li .nazwa {
+            margin: 10px 10px 10px 10px;
+            float: left;
+            font-size: 12px;
+        }
+
+        #user_field #bobaskowo_left li.bobaskowo_left_item_li_line {
+            background-color: #cdd1dd;
+            width: 244px;
+            height: 3px;
+            padding: 0;
+            margin: 10px 0 0 0;
+        }
+
+        /*                       AUKCJA                                -*/
+
+        #user_field #bobaskowo_auction {
+            margin: 20px 15px 5px 20px;
+            padding: 25px 15px 15px 15px;
+            display: block;
+            /*width: 825px;*/
+            width: 70%;
+            float: left;
+            text-align: left;
+            line-height: 18px;
+            font-family: Verdana;
+            font-size: 14px;
+            border: 2px solid;
+            border-radius: 10px;
+            text-align: center;
+            overflow: hidden;
+            color:black;
+
+        }
+
+        #user_field #bobaskowo_auction p {
+            float: left;
+            padding: 0 20px 0 20px;
+            width: 590px;
+        }
+
+        #user_field #bobaskowo_auction .strong {
+            color:red;
+            font-weight: bold;;
+        }
+
+        #user_field #bobaskowo_footer {
+            clear: both;
+        }
+
+
+        .slider{
+            width: 640px; /*Same as width of the large image*/
+            position: relative;
+            /*Instead of height we will use padding*/
+            padding-top: 320px; /*That helps bring the labels down*/
+
+            margin: 100px auto;
+
+            /*Lets add a shadow*/
+            box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
+        }
+
+
+        /*Last thing remaining is to add transitions*/
+        .slider>img{
+            position: absolute;
+            left: 0; top: 0;
+            transition: all 0.5s;
+        }
+
+        .slider input[name='slide_switch'] {
+            display: none;
+        }
+
+        .slider label {
+            /*Lets add some spacing for the thumbnails*/
+            margin: 18px 0 0 18px;
+            border: 3px solid #999;
+
+            float: left;
+            cursor: pointer;
+            transition: all 0.5s;
+
+            /*Default style = low opacity*/
+            opacity: 0.6;
+        }
+
+        .slider label img{
+            display: block;
+        }
+
+        /*Time to add the click effects*/
+        .slider input[name='slide_switch']:checked+label {
+            border-color: #666;
+            opacity: 1;
+        }
+        /*Clicking any thumbnail now should change its opacity(style)*/
+        /*Time to work on the main images*/
+        .slider input[name='slide_switch'] ~ img {
+            opacity: 0;
+            transform: scale(1.1);
+        }
+        /*That hides all main images at a 110% size
+        On click the images will be displayed at normal size to complete the effect
+        */
+        .slider input[name='slide_switch']:checked+label+img {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        --></style>
+        <!--[if lte IE 7]> <!  kod_usuniety_automatycznie -->
+        <!--  #ie {     width: 500px;     border: 1px solid #fff;     background-color: #991111;     color: #fff; }      -->
+        <!--[endif] -->
+        <center>
+            <div><!--[if lte IE 7]>
+                <div id="ie">
+                    <p>Uwaga! Używasz przestarzałej przeglądarki, w wyniku czego strona może być nieprawidłowo
+                        wyświetlana. Aby nie oglądać więcej tego komunikatu i cieszyć się widokiem poprawnie
+                        wyświetlanych stron, <b>zaktualizuj swoją przeglądarkę!</b></p>
+                </div>
+                <![endif]-->
+                <div id="bobaskowo_top">
+                    <div id="bobaskowo_menu">
+                        <ul>
+                            <li><a href="http://allegro.pl/listing.php/user?us_id=42342587"><img
+                                    src="http://bobaskowoskl.nazwa.pl/bobaskowo_sklep/images/allegro/oferta.png"/></a>
+                            </li>
+                            <li><a href="http://allegro.pl/show_user.php?uid=42342587"><img
+                                    src="http://bobaskowoskl.nazwa.pl/bobaskowo_sklep/images/allegro/komentarze.png"/></a>
+                            </li>
+                            <li><a href="http://allegro.pl/my_page.php?uid=42342587"><img
+                                    src="http://bobaskowoskl.nazwa.pl/bobaskowo_sklep/images/allegro/o_mnie.png"/></a>
+                            </li>
+                            <li><a href="http://allegro.pl/SendMailToUser.php?userId=42342587"><img
+                                    src="http://bobaskowoskl.nazwa.pl/bobaskowo_sklep/images/allegro/kontakt.png"/></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="bobaskowo_main">
+                    <div id="bobaskowo_left_menu">
+                        <div id="bobaskowo_left">
+                            <div class="bobaskowo_left_item">
+                                <ul class="bobaskowo_left_item_list">
+                                    <li class="bobaskowo_left_item_list_top"> Kontakt</li>
+                                    <li class="bobaskowo_left_item_li_line"></li>
+                                    <li class="bobaskowo_left_item_list_li"><span style="color: #000000;"><span
+                                            class="nazwa">Telefon: </span><span class="tekst">663-791-413</span></span>
+                                    </li>
+                                    <li class="bobaskowo_left_item_list_li"><span style="color: #000000;"><span
+                                            class="nazwa">E-mail: </span><span class="tekst"><a
+                                            href="mailto:sklepbobaskowo@gmail.com">&nbsp;allegro@bobaskowo.sklep.pl</a></span></span>
+                                    </li>
+                                    <li class="bobaskowo_left_item_list_li"><span style="color: #000000;"><span
+                                            class="nazwa">Godz:&nbsp;&nbsp;&nbsp; </span><span class="tekst">Pon-Pt 8:30-14:00</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bobaskowo_left_item">
+                                <ul class="bobaskowo_left_item_list">
+                                    <li class="bobaskowo_left_item_list_top"> <span class="star">&#9733;</span> Bonus <span class="star">&#9733;</span></li>
+                                    <li class="bobaskowo_left_item_li_line"></li>
+                                    <li class="bobaskowo_left_item_list_li" style="height: 50px; "><span style="color: #000000;">
+                                        <span class="tekst">W przypadku zakupu > 150 zł upominek dla Bobasa</span></span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bobaskowo_left_item">
+                                <ul class="bobaskowo_left_item_list">
+                                    <li class="bobaskowo_left_item_list_top"> Wysyłka</li>
+                                    <li class="bobaskowo_left_item_li_line"></li>
+                                    <li class="bobaskowo_left_item_list_li"
+                                        style="height: 320px; color: dimgrey; text-align: center;"><span class="tekst"> Towar wysyłamy do 24h po zaksięgowania wpłaty.
+                                        <br/> <br/> Przesyłki priorytetowe docierają do państwa zwykle w ciągu 1-2 dni roboczych, natomiast ekonomiczne w ciągu 4 dni.                                             <br/> <br/> Kupując na kilku naszych aukcjach za wysyłkę płacą Państwo tylko raz!
+                                        <br/> <br/> <br/> Opłata zgodnie z cennikiem Poczty Polskiej oraz InPostu.
+                                        <br/> <br/> Koszt przesyłki jest podany w opisie każdej aukcji.
+                                        <br/> <br/> Odbiór osobisty na terenie Krakowa, po wcześniejszym kontakcie. </span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="bobaskowo_left_item">
+                                <ul class="bobaskowo_left_item_list">
+                                    <li class="bobaskowo_left_item_list_top"> Płatności</li>
+                                    <li class="bobaskowo_left_item_li_line"></li>
+                                    <li class="bobaskowo_left_item_list_li"
+                                        style="height: 190px; color: dimgrey; line-height: 200%; text-align: center;">
+                                        <span class="tekst"> Dane do przelewu:                                             <br/> K&K                                             <br/> Ławnica 67                                           <br/> 39-331 Chorzel&oacute;w                                             <br/>
+										<strong>
+                                            37 1240 2294 1111 0010 4284 3482</strong> <br/> W tytule przelewu prosimy wpisać NICK ALLEGRO i NR AUKCJI </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="bobaskowo_auction">
+
+
+                        <div class="slider">
+                            <input type="radio" name="slide_switch" id="id1"/>
+                            <label for="id1">
+                                <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+
+                            <!--Lets show the second image by default on page load-->
+                            <input type="radio" name="slide_switch" id="id2" checked="checked"/>
+                            <label for="id2">
+                                <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id3"/>
+                            <label for="id3">
+                                <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id4"/>
+                            <label for="id4">
+                                <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id5"/>
+                            <label for="id5">
+                                <img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id6"/>
+                            <label for="id6">
+                                <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id7"/>
+                            <label for="id7">
+                                <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id8"/>
+                            <label for="id8">
+                                <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id9"/>
+                            <label for="id9">
+                                <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+
+                            <input type="radio" name="slide_switch" id="id10"/>
+                            <label for="id10">
+                                <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
+                            </label>
+                            <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div id="bobaskowo_footer">
+                    <br>
+                    <br>
+                    <p>&copy; 2016 bobaskowo_sklep<p>
+
+                </div>
+
+            </div>
+        </center>
+        <p><a name="gallery">&nbsp;</a></p></fieldset>
+</form>
+
+
+</body>
+</html>
