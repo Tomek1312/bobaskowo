@@ -115,8 +115,8 @@
             vertical-align: middle;
         }
 
-        #user_field #bobaskowo_left .star{
-            color:yellow;
+        #user_field #bobaskowo_left .star {
+            color: yellow;
         }
 
         #user_field #bobaskowo_left li.bobaskowo_left_item_list_li {
@@ -169,7 +169,7 @@
             border-radius: 10px;
             text-align: center;
             overflow: hidden;
-            color:black;
+            color: black;
 
         }
 
@@ -180,7 +180,7 @@
         }
 
         #user_field #bobaskowo_auction .strong {
-            color:red;
+            color: red;
             font-weight: bold;;
         }
 
@@ -189,23 +189,24 @@
         }
 
 
-        .slider{
+
+        .slider {
             width: 640px; /*Same as width of the large image*/
             position: relative;
             /*Instead of height we will use padding*/
             padding-top: 320px; /*That helps bring the labels down*/
 
-            margin: 100px auto;
+            margin: 60px auto;
 
             /*Lets add a shadow*/
             box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);
         }
 
-
         /*Last thing remaining is to add transitions*/
-        .slider>img{
+        .slider > img {
             position: absolute;
-            left: 0; top: 0;
+            left: 0;
+            top: 0;
             transition: all 0.5s;
         }
 
@@ -226,28 +227,48 @@
             opacity: 0.6;
         }
 
-        .slider label img{
+        .slider label img {
             display: block;
         }
 
         /*Time to add the click effects*/
-        .slider input[name='slide_switch']:checked+label {
-            border-color: #666;
+        .slider input[name='slide_switch']:checked + label {
+            border-color: #66b7e6;
             opacity: 1;
         }
+
         /*Clicking any thumbnail now should change its opacity(style)*/
         /*Time to work on the main images*/
         .slider input[name='slide_switch'] ~ img {
             opacity: 0;
             transform: scale(1.1);
         }
+
         /*That hides all main images at a 110% size
         On click the images will be displayed at normal size to complete the effect
         */
-        .slider input[name='slide_switch']:checked+label+img {
+        .slider input[name='slide_switch']:checked + label + img {
             opacity: 1;
             transform: scale(1);
         }
+
+        .slider input[name='slide_switch']:checked + label + img + .type{
+            position: absolute;
+            left:305px;
+            color: red;
+            top:-50px;
+            font-weight: 800;
+            font-size: 30px;
+            opacity: 1;
+
+        }
+
+        .type{
+            color:green;
+            position: absolute;
+            opacity: 0;
+        }
+
 
         --></style>
         <!--[if lte IE 7]> <!  kod_usuniety_automatycznie -->
@@ -300,9 +321,11 @@
                             </div>
                             <div class="bobaskowo_left_item">
                                 <ul class="bobaskowo_left_item_list">
-                                    <li class="bobaskowo_left_item_list_top"> <span class="star">&#9733;</span> Bonus <span class="star">&#9733;</span></li>
+                                    <li class="bobaskowo_left_item_list_top"><span class="star">&#9733;</span> Bonus
+                                        <span class="star">&#9733;</span></li>
                                     <li class="bobaskowo_left_item_li_line"></li>
-                                    <li class="bobaskowo_left_item_list_li" style="height: 50px; "><span style="color: #000000;">
+                                    <li class="bobaskowo_left_item_list_li" style="height: 50px; "><span
+                                            style="color: #000000;">
                                         <span class="tekst">W przypadku zakupu > 150 zł upominek dla Bobasa</span></span>
                                     </li>
                                 </ul>
@@ -337,12 +360,54 @@
                     <div id="bobaskowo_auction">
 
 
+                        <div id="description">
+                            Przedmiotem aukcji są najwyższej jakości pieluszki tetrowe z kolorowym nadrukiem niezbędne
+                            przy codziennej pielęgnacji każdego Bobaska.
+                            <br>
+                            <br>
+                            Pieluszki pochodzą od polskiego producenta.
+                            <br>
+                            Wyprodukowane są z tetry – gatunek I, 100% bawełny.
+                            <br>
+                            <br>
+
+                            Charakterystyka:
+                            <br>
+                            <br>
+
+                            <span>
+                            <ul>
+                                <li>Wymiary: 60cm x 80cm</li>
+                                <li>Materiał: 100% bawełny</li>
+                                <li>Gatunek: I</li>
+                                <li>Wysokiej jakości tetra</li>
+                                <li>Wyprodukowane w Polsce</li>
+                                <li>Posiadają ATEST bezpieczeństwa</li>
+
+                            </ul>
+
+                            </span>
+                            Poniżej znajdują się zdjęcia z dostępnymi wzorami.
+
+                            Po zakupie prosimy o wiadomość email z wyborem wzorów, w przeciwnym wypadku zostaną one
+                            wysłane losowo.
+
+
+                        </div>
+                        <br>
+                        <br>
+                        WZÓR
+                        <br>
+
+
                         <div class="slider">
+
                             <input type="radio" name="slide_switch" id="id1"/>
                             <label for="id1">
                                 <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+                            <span class="type">1</span>
 
                             <!--Lets show the second image by default on page load-->
                             <input type="radio" name="slide_switch" id="id2" checked="checked"/>
@@ -350,56 +415,64 @@
                                 <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+                            <span class="type">2</span>
 
                             <input type="radio" name="slide_switch" id="id3"/>
                             <label for="id3">
                                 <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/00kih8g.jpg"/>
+                            <span class="type">3</span>
 
                             <input type="radio" name="slide_switch" id="id4"/>
                             <label for="id4">
                                 <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+                            <span class="type">4</span>
 
                             <input type="radio" name="slide_switch" id="id5"/>
                             <label for="id5">
                                 <img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/8k3N3EL.jpg"/>
+                            <span class="type">5</span>
 
                             <input type="radio" name="slide_switch" id="id6"/>
                             <label for="id6">
                                 <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+                            <span class="type">6</span>
 
                             <input type="radio" name="slide_switch" id="id7"/>
                             <label for="id7">
                                 <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+                            <span class="type">7</span>
 
                             <input type="radio" name="slide_switch" id="id8"/>
                             <label for="id8">
                                 <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+                            <span class="type">8</span>
 
                             <input type="radio" name="slide_switch" id="id9"/>
                             <label for="id9">
                                 <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+                            <span class="type">9</span>
 
                             <input type="radio" name="slide_switch" id="id10"/>
                             <label for="id10">
                                 <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg" width="100"/>
                             </label>
                             <img src="http://thecodeplayer.com/uploads/media/2rT2vdx.jpg"/>
+                            <span class="type">10</span>
                         </div>
-
 
 
                     </div>
@@ -407,7 +480,8 @@
                 <div id="bobaskowo_footer">
                     <br>
                     <br>
-                    <p>&copy; 2016 bobaskowo_sklep<p>
+                    <p>&copy; 2016 bobaskowo_sklep
+                    <p>
 
                 </div>
 
