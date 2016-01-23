@@ -233,21 +233,23 @@
         .slider a[name='slide_switch']+ img:target + .type{
             position: absolute;
             left:305px;
-            color: red;
             top:-50px;
             font-weight: 800;
-            font-size: 30px;
             opacity: 1;
+            font: 30px 'trebuchet MS', 'lucida sans';
+            text-shadow: 0 1px 0 rgb(82, 93, 86);
         }
 
         #default_type{
             position: absolute;
             left:305px;
-            color: red;
             top:-50px;
             font-weight: 800;
-            font-size: 30px;
             opacity: 1;
+            font: 30px 'trebuchet MS', 'lucida sans';
+            text-shadow: 0 1px 0 rgb(82, 93, 86);
+            color: #66b7e6;
+
         }
 
         .slider a[name='slide_switch']+ img:target ~ #default_type{
@@ -255,7 +257,7 @@
         }
 
         .type{
-            color:green;
+            color: #66b7e6;
             position: absolute;
             opacity: 0;
         }
@@ -289,14 +291,16 @@
             width: 590px;
         }
 
-        #user_field #bobaskowo_auction .strong {
-            color: red;
-            font-weight: bold;;
-        }
-
         #bobaskowo_auction .title {
             font: 22px 'trebuchet MS', 'lucida sans';
             text-shadow: 0 1px 0 rgb(82, 93, 86);
+        }
+
+        #bobaskowo_auction .main_item {
+            font: 48px 'trebuchet MS', 'lucida sans';
+            color: #60b5e5;
+            text-shadow: 0 1px 0 rgb(82, 93, 86);
+            margin: 20px;
         }
 
         #bobaskowo_auction .rounded_list{
@@ -341,10 +345,8 @@
 
         /*++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++*/
 
-        --></style>
-        <!--[if lte IE 7]> <!  kod_usuniety_automatycznie -->
-        <!--  #ie {     width: 500px;     border: 1px solid #fff;     background-color: #991111;     color: #fff; }      -->
-        <!--[endif] -->
+        </style>
+
         <center>
             <div><!--[if lte IE 7]>
                 <div id="ie">
@@ -353,6 +355,7 @@
                         wyświetlanych stron, <b>zaktualizuj swoją przeglądarkę!</b></p>
                 </div>
                 <![endif]-->
+                
                 <div id="bobaskowo_top">
                     <div id="bobaskowo_menu">
                         <ul>
@@ -432,7 +435,12 @@
 
 
                         <div id="description">
-                            Przedmiotem aukcji są najwyższej jakości pieluszki tetrowe z kolorowym nadrukiem niezbędne
+                            Przedmiotem aukcji są najwyższej jakości
+                            <br>
+
+                            <div class="main_item">pieluszki tetrowe </div>
+
+                            <br>z kolorowym nadrukiem niezbędne
                             przy codziennej pielęgnacji każdego Bobaska.
                             <br>
                             <br>
@@ -472,11 +480,13 @@
                         <br>
 
                         <div>
-                            WZÓR
+                            <span class="title">WZÓR:</span>
                         </div>
 
-                        <div class="slider">
 
+
+
+                        <div class="slider">
 
                            <a href="#one" name="slide_switch" title="Pieluszki takie łane wzorek 1">
                                 <img src="http://bobaskowoskl.nazwa.pl/towar/pieluszki/pieluszka_1.jpg" width="100" height="60"/>
